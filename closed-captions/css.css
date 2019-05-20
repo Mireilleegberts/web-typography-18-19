@@ -5,10 +5,31 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+body{
+  background-color: #243e40;
+  margin: 0px;
+  animation-name: rood;
+  animation-duration: 120s;
+  animation-delay: 10s;
+}
+
+@keyframes rood {
+  70% {
+    background-color: #758688;
+    background-image:
+  }
+
+
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+  display: block;
+  margin-top: 50vh;
+  width: 100%
+
 }
 #closed-captions .on {
 	opacity: 1;
@@ -18,13 +39,54 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	font-family: "Brenner Mono";
+  font-style: Normal;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  font-size: 2vw;
 }
 
+
+.voice2 {
+  font-family: "Brenner";
+  font-style: Normal;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  font-size: 3vw;
+}
+
+#video-placeholder {
+  bottom: 0;
+}
+
+iframe {
+  width: 30vw;
+  height: 30vh;
+  margin-bottom: 0px;
+  display: block;
+  margin:auto;
+}
+
+#sound-wave {
+  background-color: white;
+  width: 30vw;
+  height: 22vw;
+  position: absolute;
+  margin-left: 70vw;
+}
+
+#sound-wave p {
+  padding: 2vw;
+}
+
+
+
 /* **********************************************
-The first paragraph, with extended timing for 
+The first paragraph, with extended timing for
 	all siblings. Basically what it does is that
-	it shows the text after a delay, which 
+	it shows the text after a delay, which
 	corresponds with the time that the word is
 	spoken.
 You probably want to change the styling.
@@ -37,12 +99,51 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s;
 	font-weight: 200;
+  animation-name: bounce;
+  animation-duration: 2s;
 }
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
 	font-weight: 400;
+  animation-name: bounce;
+  animation-duration: 2s;
+
 }
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
@@ -78,6 +179,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 2s;
 	font-family: "brenner script";
+  background: blue;
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
