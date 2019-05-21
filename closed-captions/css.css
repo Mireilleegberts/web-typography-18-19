@@ -6,31 +6,60 @@ Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
 body{
-  background-color: #243e40;
+  background-color: #221A35;
   margin: 0px;
-  animation-name: rood;
-  animation-duration: 120s;
-  animation-delay: 10s;
+}
+/* -- Start Legenda plus icons -- */
+#legenda {
+  background-color: #160f21;
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  margin-top:40vh;
 }
 
-@keyframes rood {
-  70% {
-    background-color: #758688;
-    background-image:
-  }
-
-
+#legenda p {
+  color: white;
+  text-align: center;
+  font-family: "Brenner";
+  font-style: Normal;
+  font-weight: 800;
+  text-align: center;
 }
+
+#drum {
+  width: 8vw;
+  margin:10px;
+}
+
+#wave{
+  width: 8vw;
+  margin:10px;
+}
+
+#robot{
+  width: 8vw;
+  margin:10px;
+}
+
+#metronoom{
+  width: 8vw;
+  margin:10px;
+}
+
+
+/* -- Start Legenda plus icons -- */
 
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
   display: block;
-  margin-top: 50vh;
+  margin-top: 45vh;
   width: 100%
 
 }
+
 #closed-captions .on {
 	opacity: 1;
 }
@@ -99,41 +128,6 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s;
 	font-weight: 200;
-  animation-name: bounce;
-  animation-duration: 2s;
-}
-
-@-webkit-keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  40%,
-  43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -30px, 0);
-    transform: translate3d(0, -30px, 0);
-  }
-
-  70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(0, -4px, 0);
-    transform: translate3d(0, -4px, 0);
-  }
 }
 
 .p0.on span:nth-of-type(2) {
@@ -179,7 +173,7 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 2s;
 	font-family: "brenner script";
-  background: blue;
+
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
@@ -195,4 +189,21 @@ You probably want to change the styling.
 	opacity: 1;
 	transition: 0s 3.7s;
 	font-family: "brenner slab";
+  background-color: blue;
 }
+.p3 .on{
+  animation-name: shake;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+}
+
+
