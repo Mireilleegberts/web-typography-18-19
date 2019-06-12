@@ -179,8 +179,8 @@ You probably want to change the styling.
 
 .p0::after {
   position: absolute;
-  content: url(images/daadkrachtig.png);
-  margin-top: 60px;
+  content: url(images/rustig.png);
+margin-top: 50px;
 
 
 }
@@ -261,8 +261,9 @@ You probably want to change the styling.
 
 .p1.on::before{
   position: absolute;
-  content: url(images/rustig.png);
+  content: url(images/p1.png);
   margin-top: 60px;
+  margin-left: -7vw;
 }
 
 .p1.on span:nth-of-type(1){
@@ -277,8 +278,9 @@ You probably want to change the styling.
 
 .p2.on::before{
   position: absolute;
-  content: url(images/daadkrachtig.png);
+  content: url(images/.png);
   margin-top: 60px;
+  margin-left: -2vw;
 
 
 }
@@ -295,8 +297,9 @@ You probably want to change the styling.
 
 .p3.on::after{
   position: absolute;
-  content: url(images/hoede.png);
+  content: url(images/p3.png);
   margin-top: 60px;
+  margin-left: -29vw;
 
 }
 
@@ -332,7 +335,7 @@ You probably want to change the styling.
 
 .p4.on::before{
   position: absolute;
-  content: url(images/hoede.png);
+  content: url(images/p4.png);
   margin-top: 60px;
   margin-left: 10vw;
 }
@@ -344,13 +347,6 @@ You probably want to change the styling.
   margin-right: -.25em;
   font-weight: 600;
 
-}
-
-.p6.on::before{
-  position: absolute;
-  content: url(images/boos.png);
-  margin-top: 60px;
-  margin-left: 10vw;
 }
 
 /* sounds */
