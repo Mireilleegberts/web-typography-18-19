@@ -5,6 +5,7 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+<<<<<<< HEAD
 body{
   background-color: #221A35;
   margin: 0px;
@@ -81,14 +82,19 @@ body{
 --*/
 /* -- Start Legenda plus icons -- */
 
+=======
+>>>>>>> parent of f8fff5a... Expiriment
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+<<<<<<< HEAD
   display: block;
   margin-top: 45vh;
   width: 100%
 
+=======
+>>>>>>> parent of f8fff5a... Expiriment
 }
 
 #closed-captions .on {
@@ -99,6 +105,7 @@ body{
 	opacity: 0;
 }
 .voice1 {
+<<<<<<< HEAD
 	font-family: "Brenner Sans";
   font-style: Normal;
   font-weight: 200;
@@ -164,10 +171,15 @@ iframe {
 
 
 
+=======
+	font-style: italic;
+}
+
+>>>>>>> parent of f8fff5a... Expiriment
 /* **********************************************
-The first paragraph, with extended timing for
+The first paragraph, with extended timing for 
 	all siblings. Basically what it does is that
-	it shows the text after a delay, which
+	it shows the text after a delay, which 
 	corresponds with the time that the word is
 	spoken.
 You probably want to change the styling.
@@ -176,6 +188,7 @@ You probably want to change the styling.
 	opacity: 0;
 	font-family: brenner;
 }
+<<<<<<< HEAD
 
 .p0::after {
   position: absolute;
@@ -185,20 +198,22 @@ margin-top: 50px;
 
 }
 
+=======
+>>>>>>> parent of f8fff5a... Expiriment
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
 	font-weight: 200;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of f8fff5a... Expiriment
 .p0.on span:nth-of-type(2) {
 	opacity: 1;
 	transition: 0s .4s;
 	margin-right: -.25em;
 	font-weight: 400;
-  animation-name: bounce;
-  animation-duration: 2s;
-
 }
 .p0.on span:nth-of-type(3) {
 	opacity: 1;
@@ -234,7 +249,10 @@ margin-top: 50px;
 	opacity: 1;
 	transition: 0s 2s;
 	font-family: "brenner script";
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of f8fff5a... Expiriment
 }
 .p0.on span:nth-of-type(9) {
 	opacity: 1;
